@@ -17,11 +17,11 @@ SplashScreen.preventAutoHideAsync();
 export default function RootLayout() {
   const colorScheme = useColorScheme();
   const [loaded] = useFonts({
-    Prentendard200: require("./assets/fonts/Pretendard-Light.otf"),
-    Prentendard400: require("./assets/fonts/Pretendard-Regular.otf"),
-    Prentendard500: require("./assets/fonts/Pretendard-Medium.otf"),
-    Prentendard600: require("./assets/fonts/Pretendard-Bold.otf"),
-    Prentendard800: require("./assets/fonts/Pretendard-Black.otf"),
+    Prentendard200: require("../assets/fonts/Pretendard-Light.otf"),
+    Prentendard400: require("../assets/fonts/Pretendard-Regular.otf"),
+    Prentendard500: require("../assets/fonts/Pretendard-Medium.otf"),
+    Prentendard600: require("../assets/fonts/Pretendard-Bold.otf"),
+    Prentendard800: require("../assets/fonts/Pretendard-Black.otf"),
   });
 
   useEffect(() => {
@@ -37,7 +37,7 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
       <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: true }} />
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
       </Stack>
     </ThemeProvider>

@@ -1,9 +1,10 @@
-import { Image, StyleSheet, View, Text } from "react-native";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import { StyleSheet, View, Text } from "react-native";
 
-export default function HomeScreen() {
+export default function WeatherScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.ex}>홈</Text>
+      <Text style={styles.ex}>날씨</Text>
     </View>
   );
 }
