@@ -1,10 +1,13 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { StyleSheet, Image, View, Text } from "react-native";
+import TextInputGroup from "@/components/TextInputGroup";
 
-export default function TicketScreen() {
+export default function QNAScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.ex}>티켓</Text>
+      <Text style={styles.ex}>질문/응답</Text>
+
+      <TextInputGroup title="이름" placeholder="이름을 입력해주세요" />
     </View>
   );
 }

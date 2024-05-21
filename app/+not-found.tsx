@@ -6,9 +6,9 @@ export default function NotFoundScreen() {
     <>
       <Stack.Screen options={{ title: "Oops!" }} />
       <View style={styles.container}>
-        <Text>This screen doesn't exist.</Text>
+        <Text>존재하지 않는 페이지입니다.</Text>
         <Link href="/" style={styles.link}>
-          <Text>Go to home screen!</Text>
+          <Text>홈으로 가기</Text>
         </Link>
       </View>
     </>

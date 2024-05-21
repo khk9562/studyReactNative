@@ -28,24 +28,25 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="ticket"
+        name="qna"
         options={{
-          title: "티켓",
+          title: "질문과 답변",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
-              name={focused ? "ticket" : "ticket-outline"}
+              name={focused ? "bulb" : "bulb-outline"}
+              // name={focused ? "sparkles" : "sparkles-outline"}
               color={color}
             />
           ),
         }}
       />
       <Tabs.Screen
-        name="weather"
+        name="profile"
         options={{
-          title: "날씨",
+          title: "마이페이지",
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon
-              name={focused ? "sunny" : "sunny-outline"}
+              name={focused ? "person-circle" : "person-circle-outline"}
               color={color}
             />
           ),
