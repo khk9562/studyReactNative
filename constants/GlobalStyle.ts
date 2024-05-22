@@ -28,13 +28,29 @@ import { StyleProp } from "react-native";
 //   };
 // }
 
-export const TextStyles: StyleProp<any> = {
+export const GlobalStyles: StyleProp<any> = {
+  container: {
+    display: "flex",
+    flexDirection: "column",
+    // justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#fff",
+    width: "100%",
+    height: "100%",
+  },
   title: {
     fontSize: 36,
     fontWeight: "bold",
     color: "white",
     textAlign: "center",
     marginBottom: 18,
+  },
+  pageTitle: {
+    fontSize: 28,
+    fontWeight: "bold",
+    color: "black",
+    textAlign: "center",
+    marginVertical: 18,
   },
   subtitle: {
     fontSize: 16, // 기본값, sm: 36, md: 40
@@ -67,5 +83,20 @@ export const TextStyles: StyleProp<any> = {
     fontSize: 16,
     fontWeight: "500",
     color: "#6366F1",
+  },
+
+  pointedContainer: {
+    width: "100%",
+    height: "100%",
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: 6,
+    backgroundColor:
+      "linear-gradient(49deg, rgba(99,102,241,1) 43%, rgba(147,51,234,1) 100%)",
+  },
+  content: {
+    alignItems: "center",
+    justifyContent: "center",
   },
 };
