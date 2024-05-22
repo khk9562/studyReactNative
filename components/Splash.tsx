@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import StyledButton from "./StyledButton";
 
 export default function Splash() {
   return (
@@ -9,9 +10,7 @@ export default function Splash() {
         <Text style={styles.subtitle}>자아 찾기</Text>
         <Text style={styles.paragraph}>자기소개서를 작성하며</Text>
         <Text style={styles.paragraph}>내 안의 가능성을 펼쳐보세요.</Text>
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>시작하기</Text>
-        </TouchableOpacity>
+        <StyledButton text="시작하기" />
       </View>
     </View>
   );
