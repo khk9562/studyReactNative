@@ -14,9 +14,10 @@ export default function TextInputGroup({
   const onChangeText = (text: string) => setText(text);
 
   return (
-    <View>
-      <Text>{title}</Text>
+    <View style={styles.container}>
+      <Text style={styles.title}>{title}</Text>
       <TextInput
+        style={styles.input}
         onChangeText={onChangeText}
         value={text}
         placeholder={placeholder}
@@ -25,4 +26,18 @@ export default function TextInputGroup({
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    width: "80%",
+  },
+  title: {
+    fontSize: 18,
+    marginBottom: 8,
+  },
+  input: {
+    fontSize: 16,
+    backgroundColor: "#f0f0f0",
+    borderRadius: 5,
+    padding: 12,
+  },
+});

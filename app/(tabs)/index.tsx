@@ -1,13 +1,13 @@
-import { Image, StyleSheet, View, Text } from "react-native";
+import { Image, StyleSheet, SafeAreaView, View, Text } from "react-native";
 import Splash from "@/components/Splash";
 import TextInputGroup from "@/components/TextInputGroup";
 
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       {/* <Text style={styles.ex}>홈</Text> */}
       <Splash />
-    </View>
+    </SafeAreaView>
   );
 }
 

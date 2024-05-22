@@ -1,11 +1,11 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { StyleSheet, View, Text } from "react-native";
+import { StyleSheet, View, SafeAreaView, Text } from "react-native";
 
 export default function ProfileScreen() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text style={styles.ex}>마이페이지</Text>
-    </View>
+    </SafeAreaView>
   );
 }
 
