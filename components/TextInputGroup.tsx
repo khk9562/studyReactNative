@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, TextInput, View } from "react-native";
+import { GlobalStyles } from "@/constants/GlobalStyle";
 
 interface TextInputGroupProps {
   title: string;
@@ -14,10 +15,10 @@ export default function TextInputGroup({
   const onChangeText = (text: string) => setText(text);
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>{title}</Text>
+    <View style={GlobalStyles.textInputGroupContainer}>
+      <Text style={GlobalStyles.textInputGroupTitle}>{title}</Text>
       <TextInput
-        style={styles.input}
+        style={GlobalStyles.textInput}
         onChangeText={onChangeText}
         value={text}
         placeholder={placeholder}
@@ -25,19 +26,3 @@ export default function TextInputGroup({
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    width: "80%",
-  },
-  title: {
-    fontSize: 18,
-    marginBottom: 8,
-  },
-  input: {
-    fontSize: 16,
-    backgroundColor: "#f0f0f0",
-    borderRadius: 5,
-    padding: 12,
-  },
-});

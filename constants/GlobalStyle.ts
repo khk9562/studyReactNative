@@ -99,4 +99,20 @@ export const GlobalStyles: StyleProp<any> = {
     alignItems: "center",
     justifyContent: "center",
   },
+
+  // TextInputGroup
+  textInputGroupContainer: {
+    width: "80%",
+    marginTop: 12,
+  },
+  textInputGroupTitle: {
+    fontSize: 18,
+    marginBottom: 8,
+  },
+  textInput: {
+    fontSize: 16,
+    backgroundColor: "#f0f0f0",
+    borderRadius: 5,
+    padding: 12,
+  },
 };
