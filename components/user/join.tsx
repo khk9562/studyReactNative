@@ -1,7 +1,15 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { StyleSheet, Image, View, Text, SafeAreaView } from "react-native";
+import {
+  StyleSheet,
+  Image,
+  View,
+  Text,
+  SafeAreaView,
+  Pressable,
+} from "react-native";
 import TextInputGroup from "@/components/TextInputGroup";
 import { GlobalStyles } from "@/constants/GlobalStyle";
+import StyledButton from "../StyledButton";
 
 export default function Join() {
   return (
@@ -16,6 +24,8 @@ export default function Join() {
         title="비밀번호 확인"
         placeholder="비밀번호를 입력해주세요"
       />
+
+      <StyledButton text="가입하기" />
     </View>
   );
 }

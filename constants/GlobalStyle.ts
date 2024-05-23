@@ -1,38 +1,10 @@
 import { StyleProp } from "react-native";
-// interface ITextStyle {
-//   title: {
-//     fontSize: number;
-//     fontWeight: string;
-//     color: string;
-//     textAlign: string;
-//     marginBottom: number;
-//   };
-//   subtitle: {
-//     fontSize: number;
-//     fontWeight: string;
-//     color: string;
-//     textAlign: string;
-//     marginBottom: number;
-//   };
-//   paragraph: {
-//     fontSize: number;
-//     color: string;
-//     textAlign: string;
-//     marginBottom: number;
-//   };
-//   button: any;
-//   buttonText: {
-//     fontSize: number;
-//     fontWeight: string;
-//     color: string;
-//   };
-// }
 
 export const GlobalStyles: StyleProp<any> = {
   container: {
     display: "flex",
     flexDirection: "column",
-    // justifyContent: "center",
+    justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#fff",
     width: "100%",
@@ -103,7 +75,7 @@ export const GlobalStyles: StyleProp<any> = {
   // TextInputGroup
   textInputGroupContainer: {
     width: "80%",
-    marginTop: 12,
+    marginBottom: 18,
   },
   textInputGroupTitle: {
     fontSize: 18,
@@ -114,5 +86,21 @@ export const GlobalStyles: StyleProp<any> = {
     backgroundColor: "#f0f0f0",
     borderRadius: 5,
     padding: 12,
+  },
+
+  // Question
+  questionBox: {
+    backgroundColor: "#6366F1",
+    width: "80%",
+    minHeight: 80,
+    margin: 18,
+    padding: 24,
+    borderRadius: 8,
+  },
+  question: {
+    fontSize: 20,
+    marginBottom: 12,
+    color: "#f0f0f0",
+    fontWeight: "bold",
   },
 };
